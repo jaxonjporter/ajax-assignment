@@ -1,0 +1,13 @@
+<div id="game-form">
+ <%= form_for @game do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f. text_field :description, class: "form-control" %>
+
+    <%= f.submit class: "btn btn-primary mt-2" %>
+<% end %>
+</div>
